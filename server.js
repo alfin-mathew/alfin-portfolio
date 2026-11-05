@@ -366,7 +366,7 @@ async function startServer() {
         console.log("MongoDB connected successfully!");
 
         await new Promise((resolve, reject) => {
-            const server = app.listen(PORT);
+            const server = app.listen(PORT,"0.0.0.0");
 
             server.once("error", reject);
 
