@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="form-page">
+
+    <header class="landing-header">
+        <nav class="landing-nav">
+            <a href="/" class="landing-logo">PORTFOLIO<span>.</span></a>
+
+            <div class="landing-links">
+                <a href="/">Home</a>
+                <a href="/feedback.html">Feedback</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="form-container">
+
+        <div class="form-heading">
+            <p class="eyebrow">LET'S GET STARTED</p>
+            <h1>Create your <span>profile.</span></h1>
+            <p>Enter your details to create your personal portfolio.</p>
+        </div>
+
+        <form id="profileForm">
+
+            <h2>Personal Information</h2>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="course">Course *</label>
+                    <input type="text" id="course" name="course" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="institution">College / Institution *</label>
+                    <input type="text" id="institution" name="institution" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="university">University</label>
+                    <input type="text" id="university" name="university">
+                </div>
+
+                <div class="form-group">
+                    <label for="studyYear">Current Study Year *</label>
+                    <input type="text" id="studyYear" name="studyYear" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="graduationYear">Expected Graduation Year</label>
+                    <input type="number" id="graduationYear" name="graduationYear">
+                </div>
+
+                <div class="form-group">
+                    <label for="linkedin">LinkedIn Profile</label>
+                    <input type="url" id="linkedin" name="linkedin">
+                </div>
+
+                <div class="form-group">
+                    <label for="github">GitHub Profile</label>
+                    <input type="url" id="github" name="github">
+                </div>
+
+            </div>
+
+            <h2>About Me</h2>
+
+            <div class="form-group">
+                <label for="headline">Professional Headline *</label>
+                <input
+                    type="text"
+                    id="headline"
+                    name="headline"
+                    placeholder="Example: Computer Science Student"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="summary">Personal Introduction *</label>
+                <textarea
+                    id="summary"
+                    name="summary"
+                    rows="4"
+                    required
+                ></textarea>
+            </div>
+
+            <h2>Skills and Interests</h2>
+
+            <div class="form-group">
+                <label for="languages">Languages *</label>
+                <textarea
+                    id="languages"
+                    name="languages"
+                    placeholder="Example: English, Malayalam"
+                    required
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="interests">Interests *</label>
+                <textarea
+                    id="interests"
+                    name="interests"
+                    required
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="skills">Technical and Other Skills *</label>
+                <textarea
+                    id="skills"
+                    name="skills"
+                    required
+                ></textarea>
+            </div>
+
+            <h2>Projects and Certifications</h2>
+
+            <div class="form-group">
+                <label for="projects">Projects *</label>
+                <textarea
+                    id="projects"
+                    name="projects"
+                    required
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="certification">Certifications</label>
+                <textarea
+                    id="certification"
+                    name="certification"
+                ></textarea>
+            </div>
+
+            <p id="formMessage" class="form-message"></p>
+
+            <button
+                type="submit"
+                class="primary-button"
+                id="submitButton"
+            >
+                Save My Profile
+            </button>
+
+        </form>
+    </main>
+
+    <script src="profile.js"></script>
+
+</body>
+</html>

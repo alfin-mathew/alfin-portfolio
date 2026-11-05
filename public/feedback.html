@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="feedback-page">
+
+    <header class="landing-header">
+        <nav class="landing-nav">
+            <a href="/" class="landing-logo">PORTFOLIO<span>.</span></a>
+
+            <div class="landing-links">
+                <a href="/">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/home.html">Edit Profile</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="feedback-container">
+
+        <section class="feedback-heading">
+            <p class="eyebrow">YOUR THOUGHTS MATTER</p>
+            <h1>Share your <span>feedback.</span></h1>
+            <p>Your suggestions and thoughts are always welcome.</p>
+        </section>
+
+        <section class="feedback-form-section">
+            <h2>Leave a Message</h2>
+
+            <form id="feedbackForm">
+
+                <div class="form-group">
+                    <label for="name">Your Name *</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Feedback *</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Write your feedback here..."
+                        required
+                    ></textarea>
+                </div>
+
+                <p id="feedbackMessage" class="form-message"></p>
+
+                <button
+                    type="submit"
+                    class="primary-button"
+                    id="feedbackButton"
+                >
+                    Submit Feedback
+                </button>
+
+            </form>
+        </section>
+
+        <section class="feedback-list-section">
+            <h2>What Visitors Say</h2>
+            <div id="feedbackList" class="feedback-list">
+                <p class="empty-feedback">Loading feedback...</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="landing-footer">
+        <p>A space for learning and creativity.</p>
+        <p>© 2026 Personal Portfolio</p>
+    </footer>
+
+    <script src="feedback.js"></script>
+
+</body>
+</html>

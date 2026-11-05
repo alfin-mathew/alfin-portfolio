@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="about-page">
+
+    <header class="landing-header">
+        <nav class="landing-nav">
+            <a href="/" class="landing-logo">PORTFOLIO<span>.</span></a>
+
+            <div class="landing-links">
+                <a href="/">Home</a>
+                <a href="/home.html">Edit Profile</a>
+                <a href="/feedback.html">Feedback</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="about-container">
+
+        <section class="about-hero">
+            <p class="eyebrow">GET TO KNOW ME</p>
+            <h1>Hello, I'm <span id="displayName">Loading...</span></h1>
+            <p class="about-headline" id="displayHeadline"></p>
+            <p class="about-summary" id="displaySummary"></p>
+        </section>
+
+        <section class="about-section">
+            <h2>Education</h2>
+            <div class="about-card">
+                <h3 id="displayCourse"></h3>
+                <p id="displayInstitution"></p>
+                <p id="displayUniversity"></p>
+                <p id="displayStudyYear"></p>
+                <p id="displayGraduationYear"></p>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2>Skills</h2>
+            <div class="about-card">
+                <p id="displaySkills"></p>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2>Languages</h2>
+            <div class="about-card">
+                <p id="displayLanguages"></p>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2>Interests</h2>
+            <div class="about-card">
+                <p id="displayInterests"></p>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2>Projects</h2>
+            <div class="about-card">
+                <p id="displayProjects"></p>
+            </div>
+        </section>
+
+        <section class="about-section" id="certificationSection">
+            <h2>Certifications</h2>
+            <div class="about-card">
+                <p id="displayCertification"></p>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2>Connect With Me</h2>
+            <div class="about-card">
+                <p id="displayEmail"></p>
+                <p id="displayPhone"></p>
+                <div class="social-links">
+                    <a id="linkedinLink" href="#" target="_blank" rel="noopener noreferrer" hidden>LinkedIn ↗</a>
+                    <a id="githubLink" href="#" target="_blank" rel="noopener noreferrer" hidden>GitHub ↗</a>
+                </div>
+            </div>
+        </section>
+
+        <p id="aboutMessage" class="form-message"></p>
+
+    </main>
+
+    <footer class="landing-footer">
+        <p>A space for learning and creativity.</p>
+        <p>© 2026 Personal Portfolio</p>
+    </footer>
+
+    <script src="about.js"></script>
+</body>
+</html>
